@@ -10,6 +10,7 @@ public class Main {
 	// 3 11.69 16.54
 	// 4 8.27 11.69
 
+	
 	static final int W = 32;
 	static final int H = 22;
 	static Random rnd = new Random();
@@ -42,9 +43,9 @@ public class Main {
 		w.println("   xmlns='http://www.w3.org/2000/svg'");
 		w.println("   xmlns:xlink='http://www.w3.org/1999/xlink'");
 		w.println("   version='1.1'");
-		w.println("   width='" + (W) + "in'");
-		w.println("   height='" + (H) + "in'");
-		w.println("  viewBox='0 0 " + W + " " + H + "'");
+		w.println("   width='" + (W+.1) + "in'");
+		w.println("   height='" + (H+.1) + "in'");
+		w.println("  viewBox='-.05 -.05 " + (W+.1) + " " + (H+.1) + "'");
 		w.println("  >	");
 
 //		 w.println("<defs>");
