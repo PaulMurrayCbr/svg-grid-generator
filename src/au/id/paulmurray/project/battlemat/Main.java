@@ -10,10 +10,10 @@ public class Main {
 	// 3 11.69 16.54
 	// 4 8.27 11.69
 
-	static final int W = 32;
-	static final int H = 22;
-//	static final int W = 8;
-//	static final int H = 10;
+//	static final int W = 32;
+//	static final int H = 22;
+	static final int W = 8;
+	static final int H = 10;
 	static Random rnd = new Random();
 
 	static final double ZZ = .01;
@@ -32,7 +32,7 @@ public class Main {
 
 	public static void main(String[] args) throws Exception {
 
-		PrintWriter w = new PrintWriter(new FileOutputStream(new File(System.getProperty("user.dir"), "a1Grid.svg")));
+		PrintWriter w = new PrintWriter(new FileOutputStream(new File(System.getProperty("user.dir"), "a4Grid.svg")));
 
 		w.println("<?xml version='1.0' encoding='UTF-8' ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>");
 
@@ -103,7 +103,7 @@ public class Main {
 
 			}
 		w.println("</g>");
-		w.println("<g stroke='black' stroke-width='1pt'>");
+		w.println("<g stroke='black' stroke-width='.5pt'>");
 		for (int x = 0; x <= W; x += 2)
 			for (int y = 0; y <= H; y += 2) {
 				w.println("<line x1='" + (pp(x)-5) + "' y1='" + pp(y) + "' x2='" + (pp(x)+5) + "' y2='" + pp(y) + "' />");
